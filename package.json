@@ -1,0 +1,17 @@
+{
+  "name": "node-anonsms",
+  "version": "1.0.0",
+  "description": "A Node.js module for sending anonymous SMS",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "sms",
+    "anonymous",
+    "nodejs"
+  ],
+  "author": "Mohammad Alamin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
