@@ -1,7 +1,7 @@
 # node-anonsms
 
 <p align="center">
-    <img width="200" src="/assets/logo.png" alt="Logo">
+    <img width="200" src="https://github.com/anbuinfosec/node-anonsms/raw/main/assets/logo.png" alt="Logo">
 </p>
 
 
