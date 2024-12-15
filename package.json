@@ -1,13 +1,21 @@
 {
   "name": "node-anonsms",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js module for sending anonymous SMS",
   "main": "index.js",
   "scripts": {},
   "keywords": [
     "sms",
     "anonymous",
-    "nodejs"
+    "nodejs",
+    "node-anonsms",
+    "anbusms",
+    "anbuinfosec",
+    "anbusms",
+    "anonsms",
+    "bdanonsms",
+    "bd-anon-sms",
+    "anonymous-sms"
   ],
   "author": "Mohammad Alamin",
   "license": "MIT",
