@@ -1,15 +1,20 @@
 # node-anonsms
 
-![Logo](/assets/logo.png)
+<p align="center">
+    <img width="200" src="/assets/logo.png" alt="Logo">
+</p>
 
-Welcome to **`node-anonsms`**, the ultimate Node.js module for sending anonymous SMS messages and managing your SMS account with ease! This package leverages the powerful [ANBUINFOSEC SMS API](https://sms.anbuinfosec.xyz/) to let you send SMS messages securely and retrieve important account data, all with a simple and clean API.
+
+**`node-anonsms`** is a Node.js module for sending anonymous SMS messages and managing your SMS account with ease, powered by the [AnbuInfoSec SMS API](https://sms.anbuinfosec.xyz/). Whether you need to send SMS messages anonymously or check your account details, this module makes it easy to interact with the SMS service securely and efficiently.
+
+---
 
 ## Features
 
-- 🌍 **Send Anonymous SMS**: Send SMS messages anonymously to any phone number globally.
-- 📊 **Account Management**: Easily fetch your account details, such as balance and subscription status.
-- 💳 **Real-Time Balance Update**: Automatically get your balance updates with each message sent.
-- 🔒 **Secure and Fast**: API integration with robust authentication and fast response times.
+- 🌍 **Send Anonymous SMS**: Easily send anonymous SMS messages to any number globally.
+- 📊 **Account Management**: Fetch your account details, including balance and user information.
+- 💳 **Real-Time Balance Updates**: Get your balance updated with each SMS sent.
+- 🔒 **Secure API Integration**: Robust authentication and fast response times ensure a secure experience.
 
 ---
 
@@ -29,7 +34,7 @@ Welcome to **`node-anonsms`**, the ultimate Node.js module for sending anonymous
 
 ## Installation
 
-You can easily install `node-anonsms` using npm:
+To get started, you can install `node-anonsms` via npm:
 
 ```bash
 npm install node-anonsms
@@ -41,7 +46,7 @@ npm install node-anonsms
 
 ### 1. **Send SMS**
 
-Sending an anonymous SMS is straightforward using the `sendSMS` method:
+You can send an anonymous SMS message using the `sendSMS` method:
 
 ```javascript
 const AnonSMS = require('node-anonsms');
@@ -61,7 +66,7 @@ smsService.sendSMS('01XXXXXXXXX', 'ANON SMS PANEL')
 
 ### 2. **Fetch User Details**
 
-You can retrieve your user details (such as balance and account status) with the `getMe` method:
+You can fetch user information (such as balance and account status) using the `getMe` method:
 
 ```javascript
 const AnonSMS = require('node-anonsms');
@@ -85,7 +90,7 @@ smsService.getMe()
 
 ### Success Response
 
-When the SMS is sent successfully, the API will return a JSON response like this:
+When an SMS is successfully sent, the API returns the following response:
 
 ```json
 {
@@ -100,14 +105,14 @@ When the SMS is sent successfully, the API will return a JSON response like this
 
 - **success**: `true` – Indicates the SMS was successfully sent.
 - **message**: The confirmation message (e.g., `"Message sent successfully."`).
-- **mobile**: The mobile number that received the SMS.
-- **msg**: The SMS message that was sent.
-- **newBalance**: The updated account balance after sending the SMS.
-- **ip**: The IP address used for the request.
+- **mobile**: The recipient's mobile number.
+- **msg**: The content of the SMS.
+- **newBalance**: Updated account balance after sending the SMS.
+- **ip**: The IP address from which the request was made.
 
 ### Error Response
 
-If there is an error in processing the request, the API will return an error response:
+If there is an error, the API will return an error response:
 
 ```json
 {
@@ -130,7 +135,7 @@ If there is an error in processing the request, the API will return an error res
 
 ## Example
 
-Here’s a complete example to send an SMS and fetch your user details:
+Here's a complete example to send an SMS and fetch user details:
 
 ```javascript
 const AnonSMS = require('node-anonsms');
@@ -161,4 +166,4 @@ smsService.getMe()
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
